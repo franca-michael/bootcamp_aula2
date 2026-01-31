@@ -66,11 +66,32 @@ print(area)
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
-# 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
-# 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
-# 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
-# 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+texto = input("Inserir uma frase: ")
+texto_maiusculo = texto.upper()
+print(texto_maiusculo)
 
+# 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+texto = input("Inserir uma frase: ")
+texto_minusculo = texto.lower()
+print(texto_minusculo)
+
+# 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+texto = input("Inserir uma frase: ")
+texto_sem_espacos = texto.strip()
+print(texto_sem_espacos)
+
+# 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+data = input("Inserir uma data no formato dd/mm/aaaa: ")
+dia, mes, ano = data.split("/")
+print(dia)
+print(mes)
+print(ano)
+
+# 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+string_01 = input("Inserir a primeira string: ")
+string_02 = input("Inserir a segunda string: ")
+concatenacao = string_01 + string_02
+print(concatenacao)
 
 
 # #### Booleanos (`bool`)
