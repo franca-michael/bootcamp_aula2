@@ -35,11 +35,32 @@ print(quadrado)
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
-# 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-# 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
-# 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
-# 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+numero_01 = float(input("Inserir um numero flutuante: "))
+numero_02 = float(input("Inserir outro numero flutuante: "))
+resultado = numero_01 + numero_02
+print(resultado)
 
+# 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+numero_01 = float(input("Inserir um numero flutuante: "))
+numero_02 = float(input("Inserir outro numero flutuante: "))
+media = (numero_01 + numero_02) / 2
+print(media)
+
+# 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+base = float(input("Inserir a base (numero flutuante): "))
+expoente = float(input("Inserir o expoente (numero flutuante): "))
+potencia = base ** expoente
+print(potencia)
+
+# 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+celsius = float(input("Inserir a temperatura em Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print(fahrenheit)
+
+# 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+raio = float(input("Inserir o raio do círculo: "))
+area = math.pi * (raio ** 2)
+print(area)
 
 
 # #### Strings (`str`)
